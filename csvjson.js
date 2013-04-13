@@ -154,6 +154,10 @@ var csvjson = {};
 		return ret;
 	}
 
+    if (typeof define === 'function') {
+        define('csvjson', [], function () { return csvjson; } );
+    }
+
 })();	// Execute hidden-scope code
 
 
